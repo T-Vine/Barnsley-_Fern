@@ -22,7 +22,9 @@ x := 0.0;
 y := 0.0;
 
 p1 = {};
-While[n < 100000,
+max = 100
+Manipulate[
+While[n < max,
   rand[x, y];
   x := Part[randomOne, 1];
   y := Part[randomOne, 2];
@@ -31,4 +33,5 @@ While[n < 100000,
   n++
   ];
   
-ListPlot[p1, PlotStyle->{PointSize[0.000001]}]
+ListPlot[p1, PlotStyle->{Green, PointSize[0.000001]}]
+, {max, 10,1000000}]
