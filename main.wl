@@ -11,7 +11,7 @@ rand[x_, y_] := (
  
   If[LessThan[1][random], randomOne := fa[x, y],
    If[LessThan[86][random], randomOne := fb[x, y],
-    If[LessThan[93][random], randomOne := fc[x, y],
+    If[LessThan[94][random], randomOne := fc[x, y],
      If[LessThan[101][random], randomOne := fd[x, y] ]]
     ]
    ]
